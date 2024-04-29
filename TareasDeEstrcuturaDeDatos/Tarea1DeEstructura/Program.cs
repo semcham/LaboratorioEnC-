@@ -3,6 +3,8 @@
 //Operaciones Básicas: 
 //1) Realiza la suma, resta, multiplicación y división de dos números ingresados por el usuario.
 
+using System;
+
 Console.WriteLine("========Calcular:suma,resta,multiplicacion,division=============");
 double n1, n2, suma, resta, multiplicacion, division;
 Console.Write("Ingrese el primer numero : ");
@@ -208,6 +210,72 @@ foreach (int j in numeros)
 }
 Console.WriteLine();
 Console.WriteLine("=========Fin del Programa===========");
+
+//Palíndromo:
+//12) Verifica si una palabra ingresada por el usuario es un palíndromo. 
+Console.WriteLine("=========Verificar si la palabra es Palindromo o no===========");
+Console.Write("Ingrese una palabra: ");
+string p = Console.ReadLine();
+int pl = p.Length - 1;
+string PalabraInvertida = "";
+while (pl >= 0)
+{
+    PalabraInvertida += p[pl];
+    pl -= 1;
+}
+if (p == PalabraInvertida)
+{
+    Console.WriteLine("La palabra '{0}' es Palindromo.",p);
+}
+else
+{
+    Console.WriteLine("La palabra '{0}' no es Palindromo.",p);
+}
+Console.WriteLine("=========Fin del Programa===========");
+
+//Generador de Tablas de Multiplicar: 
+//13) Crea un programa que genere la tabla de multiplicar de un número ingresado por el usuario. 
+Console.WriteLine("=========Generador de tabla de Multiplicar===========");
+Console.Write("Ingrese un numero entero: ");
+int s = int.Parse(Console.ReadLine());
+for (int i = 1; i <= s; i++)
+{
+    for (int j = 1; j <= 12; j++)
+    {
+        int resultado = i * j;
+        Console.WriteLine($"{i}x{j}={resultado}");
+
+    }
+    Console.WriteLine();
+}
+Console.WriteLine("=========Fin del Programa===========");
+
+
+//Cálculo del Área de un Círculo: 
+//14) Pide el radio de un círculo al usuario y calcula su área. 
+Console.WriteLine("=========Calcular el Area de un Circulo===========");
+double r, Area;
+Console.Write("Ingrese el Radio del Circulo: ");
+r = double.Parse(Console.ReadLine());
+Area =Math.PI*(r*r);
+Console.WriteLine("El Area del circulo es: "+Math.Round(Area,2));
+Console.WriteLine("=========Fin del Programa===========");
+
+//Suma de Dígitos: 
+//15) Toma un número entero y calcula la suma de sus dígitos. 
+Console.WriteLine("=========Calcular la suma de los digitos de un numero===========");
+Console.Write("Ingrese un numero entero positivo: ");
+int d = int.Parse(Console.ReadLine());
+int sumaDigitos=0;
+while (d > 0)
+{
+    int digito = d%10;
+    sumaDigitos+=digito;
+    d/=10;
+}
+Console.WriteLine("La suma de los digitos del numero {0} es : {1}",d,sumaDigitos);
+Console.WriteLine("=========Fin del Programa===========");
+
 
 
 
