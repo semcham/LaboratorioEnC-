@@ -179,6 +179,8 @@ Console.WriteLine("La cantidad de vocales es : {0}",contadorVocales);
 
 Console.WriteLine("=========Fin del Programa===========");
 
+
+
 //Números de la Serie Fibonacci: 
 //10) Genera los primeros 10 números de la serie Fibonacci. 
 Console.WriteLine("=========Calcular La serie Fibonacci===========");
@@ -273,7 +275,7 @@ while (d > 0)
     sumaDigitos+=digito;
     d/=10;
 }
-Console.WriteLine("La suma de los digitos del numero {0} es : {1}",d,sumaDigitos);
+Console.WriteLine($"La suma de los digitos del numero  es : {sumaDigitos}");
 Console.WriteLine("=========Fin del Programa===========");
 
 
