@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarea1DeEstructura", "Tarea1DeEstructura\Tarea1DeEstructura.csproj", "{710CCAE8-B576-4878-95E2-EDC7B03C3913}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarea2DeEstructura", "Tarea2DeEstructura\Tarea2DeEstructura.csproj", "{88215862-B42B-4D89-9289-0FDB85255DD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarea2DeEstructura-recursividad", "Tarea2DeEstructura\Tarea2DeEstructura-recursividad.csproj", "{88215862-B42B-4D89-9289-0FDB85255DD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
