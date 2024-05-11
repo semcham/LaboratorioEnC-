@@ -104,7 +104,6 @@ for (int i = 1; i <= s; i++)
     }
     Console.WriteLine();
 }
-Console.WriteLine("=========Fin del Programa===========");
 Console.ReadLine();
 Console.WriteLine("=============== FIN DEL PROGRAMA=============");
 
@@ -124,11 +123,12 @@ for (int i = 0; i < 3; i++)
 }
 Console.Read();
 Console.WriteLine("=============== FIN DEL PROGRAMA=============");
+
 /*
 //7) Crea una matriz de números complejos. 
-Console.WriteLine("=================La Matriz de Numeros Complejos =============");
-using System;
 using System.Numerics;
+
+Console.WriteLine("=================La Matriz de Numeros Complejos =============");
 Complex[,] complejoMatriz = new Complex[3, 3];
 complejoMatriz[0,0]= new Complex(3,4);
 complejoMatriz[0, 1] = new Complex(4, 8);
@@ -150,8 +150,8 @@ for (int i = 0; i < complejoMatriz.GetLength(0); i++) // Iterar sobre las filas
 }
 Console.ReadLine();
 Console.WriteLine("=================Fin del Programa =============");
-*/
 
+*/
 //8) Crea una matriz de matrices. 
 Console.WriteLine("=============== Matriz De Matrices =============");
 int[][,] MatrizDeMatrices = new int[][,]
@@ -182,6 +182,36 @@ for (int k = 0; k < MatrizDeMatrices.Length; k++)
 
     Console.WriteLine(""); 
 }Console.Read();
+Console.WriteLine("=============== FIN DEL PROGRAMA=============");
+//9) Accede al elemento central de una matriz.
+Console.WriteLine("=============== Accede al elemento central de una matriz =============");
+int[,] matrizImpar = {
+            { 1, 2, 3 },
+            { 4, 5, 6 },
+            { 7, 8, 9 }
+        };
+
+// Matriz de ejemplo con un número par de filas y columnas
+int[,] matrizPar = {
+            { 1, 2, 3, 4 },
+            { 5, 6, 7, 8 },
+            { 9, 10, 11, 12 },
+            { 13, 14, 15, 16 }
+        };
+
+// Acceder al elemento central de una matriz con un número impar de filas y columnas
+int centroImpar = matrizImpar[matrizImpar.GetLength(0) / 2, matrizImpar.GetLength(1) / 2];
+Console.WriteLine("Elemento central de la matriz impar: " + centroImpar);
+
+// Acceder al elemento central de una matriz con un número par de filas y columnas
+int filaCentral = matrizPar.GetLength(0) / 2;
+int columnaCentral = matrizPar.GetLength(1) / 2;
+int centroPar1 = matrizPar[filaCentral, columnaCentral];
+int centroPar2 = matrizPar[filaCentral - 1, columnaCentral];
+int centroPar3 = matrizPar[filaCentral, columnaCentral - 1];
+int centroPar4 = matrizPar[filaCentral - 1, columnaCentral - 1];
+Console.WriteLine("Elementos centrales de la matriz par: " + centroPar1 + ", " + centroPar2 + ", " + centroPar3 + ", " + centroPar4);
+
 Console.WriteLine("=============== FIN DEL PROGRAMA=============");
 
 Console.WriteLine("=============== Suma dos Matrices de Diferentes Tamaños =============");
@@ -468,4 +498,5 @@ for (int i = 0; i < cols; i++)
     Console.WriteLine();
 }
 Console.WriteLine("================== FIN DEL PROGRAMA ================");
+
 
