@@ -3,7 +3,7 @@ namespace Laboratorio7
     public partial class Form1 : Form
     {
         Empleado empleado;
-    
+
         public Form1()
         {
             InitializeComponent();
@@ -67,6 +67,31 @@ namespace Laboratorio7
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSueldo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHorasExtras_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboTipoSeguro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboArea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

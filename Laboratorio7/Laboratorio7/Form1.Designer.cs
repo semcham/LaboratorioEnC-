@@ -65,6 +65,7 @@
             cboTipoSeguro.Name = "cboTipoSeguro";
             cboTipoSeguro.Size = new Size(151, 28);
             cboTipoSeguro.TabIndex = 1;
+            cboTipoSeguro.SelectedIndexChanged += cboTipoSeguro_SelectedIndexChanged;
             // 
             // txtCodigo
             // 
@@ -80,6 +81,7 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(182, 27);
             txtNombre.TabIndex = 4;
+            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // label2
             // 
@@ -96,6 +98,7 @@
             txtSueldo.Name = "txtSueldo";
             txtSueldo.Size = new Size(125, 27);
             txtSueldo.TabIndex = 6;
+            txtSueldo.TextChanged += txtSueldo_TextChanged;
             // 
             // label3
             // 
@@ -112,6 +115,7 @@
             txtHorasExtras.Name = "txtHorasExtras";
             txtHorasExtras.Size = new Size(125, 27);
             txtHorasExtras.TabIndex = 8;
+            txtHorasExtras.TextChanged += txtHorasExtras_TextChanged;
             // 
             // label4
             // 
@@ -150,6 +154,7 @@
             cboArea.Name = "cboArea";
             cboArea.Size = new Size(151, 28);
             cboArea.TabIndex = 12;
+            cboArea.SelectedIndexChanged += cboArea_SelectedIndexChanged;
             // 
             // txtResultado
             // 
