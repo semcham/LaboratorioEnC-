@@ -2,7 +2,7 @@ namespace Laboratorio8
 {
     public partial class Form1 : Form
     {
-        Nombres nombres;
+        
         public Form1()
         {
             InitializeComponent();
