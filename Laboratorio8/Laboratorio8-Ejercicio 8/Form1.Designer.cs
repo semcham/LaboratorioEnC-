@@ -1,4 +1,4 @@
-﻿namespace Laboratorio8_Ejercicio_6
+﻿namespace Laboratorio8_Ejercicio8
 {
     partial class Form1
     {
@@ -28,108 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblDivisor = new Label();
             lblIngreseNumeros = new Label();
             btnAgregar = new Button();
-            txtIngreseElementosLista1 = new TextBox();
-            txtIngreseElementosLista2 = new TextBox();
+            txtIngreseElementosLista = new TextBox();
             btnSalir = new Button();
             btnLimpiar = new Button();
             txtResultado = new TextBox();
             btnCalcular = new Button();
             SuspendLayout();
             // 
-            // lblDivisor
-            // 
-            lblDivisor.AutoSize = true;
-            lblDivisor.Location = new Point(402, 22);
-            lblDivisor.Name = "lblDivisor";
-            lblDivisor.Size = new Size(203, 20);
-            lblDivisor.TabIndex = 46;
-            lblDivisor.Text = "Ingrese elementos para lista2";
-            // 
             // lblIngreseNumeros
             // 
             lblIngreseNumeros.AutoSize = true;
-            lblIngreseNumeros.Location = new Point(38, 22);
+            lblIngreseNumeros.Location = new Point(37, 9);
             lblIngreseNumeros.Name = "lblIngreseNumeros";
-            lblIngreseNumeros.Size = new Size(203, 20);
-            lblIngreseNumeros.TabIndex = 45;
-            lblIngreseNumeros.Text = "Ingrese Elementos para lista1";
+            lblIngreseNumeros.Size = new Size(195, 20);
+            lblIngreseNumeros.TabIndex = 61;
+            lblIngreseNumeros.Text = "Ingrese Elementos para lista";
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(38, 357);
+            btnAgregar.Location = new Point(58, 349);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(213, 39);
-            btnAgregar.TabIndex = 44;
-            btnAgregar.Text = "Agregar Elemento a la Listas";
+            btnAgregar.TabIndex = 60;
+            btnAgregar.Text = "Agregar Elemento a la Lista";
             btnAgregar.UseVisualStyleBackColor = true;
-            btnAgregar.Click += btnAgregar_Click_1;
+            btnAgregar.Click += btnAgregar_Click;
             // 
-            // txtIngreseElementosLista1
+            // txtIngreseElementosLista
             // 
-            txtIngreseElementosLista1.Location = new Point(38, 58);
-            txtIngreseElementosLista1.Name = "txtIngreseElementosLista1";
-            txtIngreseElementosLista1.Size = new Size(125, 27);
-            txtIngreseElementosLista1.TabIndex = 43;
-            // 
-            // txtIngreseElementosLista2
-            // 
-            txtIngreseElementosLista2.Location = new Point(402, 58);
-            txtIngreseElementosLista2.Name = "txtIngreseElementosLista2";
-            txtIngreseElementosLista2.Size = new Size(125, 27);
-            txtIngreseElementosLista2.TabIndex = 42;
+            txtIngreseElementosLista.Location = new Point(47, 60);
+            txtIngreseElementosLista.Name = "txtIngreseElementosLista";
+            txtIngreseElementosLista.Size = new Size(125, 27);
+            txtIngreseElementosLista.TabIndex = 59;
+            txtIngreseElementosLista.TextChanged += txtIngreseElementosLista_TextChanged;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(561, 357);
+            btnSalir.Location = new Point(581, 349);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(94, 39);
-            btnSalir.TabIndex = 41;
+            btnSalir.TabIndex = 58;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
-            btnSalir.Click += btnSalir_Click_1;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(422, 357);
+            btnLimpiar.Location = new Point(442, 349);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(94, 39);
-            btnLimpiar.TabIndex = 40;
+            btnLimpiar.TabIndex = 57;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
-            btnLimpiar.Click += btnLimpiar_Click_1;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // txtResultado
             // 
-            txtResultado.Location = new Point(27, 101);
+            txtResultado.Location = new Point(47, 93);
             txtResultado.Multiline = true;
             txtResultado.Name = "txtResultado";
             txtResultado.Size = new Size(657, 218);
-            txtResultado.TabIndex = 39;
-            txtResultado.TextChanged += txtResultado_TextChanged_1;
+            txtResultado.TabIndex = 56;
+            txtResultado.TextChanged += txtResultado_TextChanged;
             // 
             // btnCalcular
             // 
-            btnCalcular.Location = new Point(270, 357);
+            btnCalcular.Location = new Point(290, 349);
             btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(101, 39);
-            btnCalcular.TabIndex = 38;
+            btnCalcular.TabIndex = 55;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
-            btnCalcular.Click += btnCalcular_Click_1;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(lblDivisor);
             Controls.Add(lblIngreseNumeros);
             Controls.Add(btnAgregar);
-            Controls.Add(txtIngreseElementosLista1);
-            Controls.Add(txtIngreseElementosLista2);
+            Controls.Add(txtIngreseElementosLista);
             Controls.Add(btnSalir);
             Controls.Add(btnLimpiar);
             Controls.Add(txtResultado);
@@ -143,11 +124,9 @@
 
         #endregion
 
-        private Label lblDivisor;
         private Label lblIngreseNumeros;
         private Button btnAgregar;
-        private TextBox txtIngreseElementosLista1;
-        private TextBox txtIngreseElementosLista2;
+        private TextBox txtIngreseElementosLista;
         private Button btnSalir;
         private Button btnLimpiar;
         private TextBox txtResultado;

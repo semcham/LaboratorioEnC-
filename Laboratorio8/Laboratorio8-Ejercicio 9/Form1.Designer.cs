@@ -1,4 +1,4 @@
-﻿namespace Laboratorio8_Ejercicio_6
+﻿namespace Laboratorio8_Ejercicio_9
 {
     partial class Form1
     {
@@ -28,111 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblDivisor = new Label();
             lblIngreseNumeros = new Label();
             btnAgregar = new Button();
-            txtIngreseElementosLista1 = new TextBox();
-            txtIngreseElementosLista2 = new TextBox();
+            txtIngreseElemento = new TextBox();
             btnSalir = new Button();
             btnLimpiar = new Button();
-            txtResultado = new TextBox();
+            txtResultadoE = new TextBox();
             btnCalcular = new Button();
+            label1 = new Label();
+            txtNumero = new TextBox();
             SuspendLayout();
-            // 
-            // lblDivisor
-            // 
-            lblDivisor.AutoSize = true;
-            lblDivisor.Location = new Point(402, 22);
-            lblDivisor.Name = "lblDivisor";
-            lblDivisor.Size = new Size(203, 20);
-            lblDivisor.TabIndex = 46;
-            lblDivisor.Text = "Ingrese elementos para lista2";
             // 
             // lblIngreseNumeros
             // 
             lblIngreseNumeros.AutoSize = true;
-            lblIngreseNumeros.Location = new Point(38, 22);
+            lblIngreseNumeros.Location = new Point(41, 3);
             lblIngreseNumeros.Name = "lblIngreseNumeros";
-            lblIngreseNumeros.Size = new Size(203, 20);
-            lblIngreseNumeros.TabIndex = 45;
-            lblIngreseNumeros.Text = "Ingrese Elementos para lista1";
+            lblIngreseNumeros.Size = new Size(195, 20);
+            lblIngreseNumeros.TabIndex = 68;
+            lblIngreseNumeros.Text = "Ingrese Elementos para lista";
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(38, 357);
+            btnAgregar.Location = new Point(62, 343);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(213, 39);
-            btnAgregar.TabIndex = 44;
-            btnAgregar.Text = "Agregar Elemento a la Listas";
+            btnAgregar.TabIndex = 67;
+            btnAgregar.Text = "Agregar Elemento a la Lista";
             btnAgregar.UseVisualStyleBackColor = true;
-            btnAgregar.Click += btnAgregar_Click_1;
+            btnAgregar.Click += btnAgregar_Click;
             // 
-            // txtIngreseElementosLista1
+            // txtIngreseElemento
             // 
-            txtIngreseElementosLista1.Location = new Point(38, 58);
-            txtIngreseElementosLista1.Name = "txtIngreseElementosLista1";
-            txtIngreseElementosLista1.Size = new Size(125, 27);
-            txtIngreseElementosLista1.TabIndex = 43;
-            // 
-            // txtIngreseElementosLista2
-            // 
-            txtIngreseElementosLista2.Location = new Point(402, 58);
-            txtIngreseElementosLista2.Name = "txtIngreseElementosLista2";
-            txtIngreseElementosLista2.Size = new Size(125, 27);
-            txtIngreseElementosLista2.TabIndex = 42;
+            txtIngreseElemento.Location = new Point(51, 54);
+            txtIngreseElemento.Name = "txtIngreseElemento";
+            txtIngreseElemento.Size = new Size(125, 27);
+            txtIngreseElemento.TabIndex = 66;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(561, 357);
+            btnSalir.Location = new Point(585, 343);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(94, 39);
-            btnSalir.TabIndex = 41;
+            btnSalir.TabIndex = 65;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
-            btnSalir.Click += btnSalir_Click_1;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(422, 357);
+            btnLimpiar.Location = new Point(446, 343);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(94, 39);
-            btnLimpiar.TabIndex = 40;
+            btnLimpiar.TabIndex = 64;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
-            btnLimpiar.Click += btnLimpiar_Click_1;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
-            // txtResultado
+            // txtResultadoE
             // 
-            txtResultado.Location = new Point(27, 101);
-            txtResultado.Multiline = true;
-            txtResultado.Name = "txtResultado";
-            txtResultado.Size = new Size(657, 218);
-            txtResultado.TabIndex = 39;
-            txtResultado.TextChanged += txtResultado_TextChanged_1;
+            txtResultadoE.Location = new Point(51, 87);
+            txtResultadoE.Multiline = true;
+            txtResultadoE.Name = "txtResultadoE";
+            txtResultadoE.Size = new Size(657, 218);
+            txtResultadoE.TabIndex = 63;
             // 
             // btnCalcular
             // 
-            btnCalcular.Location = new Point(270, 357);
+            btnCalcular.Location = new Point(294, 343);
             btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(101, 39);
-            btnCalcular.TabIndex = 38;
+            btnCalcular.TabIndex = 62;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
-            btnCalcular.Click += btnCalcular_Click_1;
+            btnCalcular.Click += btnCalcular_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(358, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(63, 20);
+            label1.TabIndex = 70;
+            label1.Text = "Numero";
+            // 
+            // txtNumero
+            // 
+            txtNumero.Location = new Point(370, 54);
+            txtNumero.Name = "txtNumero";
+            txtNumero.Size = new Size(125, 27);
+            txtNumero.TabIndex = 69;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(lblDivisor);
+            Controls.Add(label1);
+            Controls.Add(txtNumero);
             Controls.Add(lblIngreseNumeros);
             Controls.Add(btnAgregar);
-            Controls.Add(txtIngreseElementosLista1);
-            Controls.Add(txtIngreseElementosLista2);
+            Controls.Add(txtIngreseElemento);
             Controls.Add(btnSalir);
             Controls.Add(btnLimpiar);
-            Controls.Add(txtResultado);
+            Controls.Add(txtResultadoE);
             Controls.Add(btnCalcular);
             Name = "Form1";
             Text = "Form1";
@@ -143,14 +142,14 @@
 
         #endregion
 
-        private Label lblDivisor;
         private Label lblIngreseNumeros;
         private Button btnAgregar;
-        private TextBox txtIngreseElementosLista1;
-        private TextBox txtIngreseElementosLista2;
+        private TextBox txtIngreseElemento;
         private Button btnSalir;
         private Button btnLimpiar;
-        private TextBox txtResultado;
+        private TextBox txtResultadoE;
         private Button btnCalcular;
+        private Label label1;
+        private TextBox txtNumero;
     }
 }
