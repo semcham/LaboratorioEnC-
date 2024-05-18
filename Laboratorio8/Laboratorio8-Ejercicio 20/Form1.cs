@@ -7,7 +7,7 @@ namespace Laboratorio8_Ejercicio_20
             InitializeComponent();
         }
         private List<string> listaPalabras = new List<string>();
-        private List<string> EncontrarPalabrasPalindromasOrdenadosPorLongitudMayorMenor(List<string> listaP)
+        private List<string> EncontrarPalabrasPalindromasOrdenadosPorLongitudMenorMayor(List<string> listaP)
         {
             List<string> palabrasPalindromas = new List<string>();
             foreach (var palabra in listaP)
@@ -18,7 +18,7 @@ namespace Laboratorio8_Ejercicio_20
                 }
             }
 
-            return palabrasPalindromas.OrderByDescending(p => p.Length).ToList();
+            return palabrasPalindromas.OrderBy(p => p.Length).ToList();
             bool EsPalindromo(string palabra)
             {
                 int a = 0;
@@ -53,8 +53,8 @@ namespace Laboratorio8_Ejercicio_20
                 txtResultado.AppendText(p + " ");
             }
             txtResultado.AppendText(Environment.NewLine);
-            txtResultado.AppendText("Las palabras palindromos son : " + Environment.NewLine);
-            List<string> palindromos = EncontrarPalabrasPalindromasOrdenadosPorLongitudMayorMenor(listaPalabras);
+            txtResultado.AppendText("Las palabras palindromos ordenadas de menor a mayor : " + Environment.NewLine);
+            List<string> palindromos = EncontrarPalabrasPalindromasOrdenadosPorLongitudMenorMayor(listaPalabras);
             foreach (string f in palindromos)
             {
                 txtResultado.AppendText(f + " ");

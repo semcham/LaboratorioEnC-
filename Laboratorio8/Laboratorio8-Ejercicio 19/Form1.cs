@@ -46,7 +46,7 @@ namespace Laboratorio8_Ejercicio_19
                 txtResultado.AppendText(i + " ");
             }
             txtResultado.AppendText(Environment.NewLine);
-            txtResultado.AppendText(" lista de numeros duplicados ordenados de menor a mayor : " + Environment.NewLine);
+            txtResultado.AppendText(" lista de numeros no duplicados ordenados de menor a mayor : " + Environment.NewLine);
             List<int> listaOrdenda = ObtenerNumerosNoDuplicadosOrdenadosMayorMenor(listaNumerosEnterosPositivos);
             foreach (int k in listaOrdenda)
             {

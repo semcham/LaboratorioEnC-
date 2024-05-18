@@ -54,7 +54,7 @@ namespace Laboratorio8_Ejercicio_16
                 txtResultado.AppendText(p + " ");
             }
             txtResultado.AppendText(Environment.NewLine);
-            txtResultado.AppendText(" lista de numeros primos de menor a mayor : " + Environment.NewLine);
+            txtResultado.AppendText(" lista de numeros primos de mayor a menor : " + Environment.NewLine);
             List<int> listaOrdenda = ListaOrdenadaNumerosPrimosMayorMenor(nummerosPositivos);
             foreach (int r in listaOrdenda)
             {

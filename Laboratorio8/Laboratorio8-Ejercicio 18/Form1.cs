@@ -28,7 +28,7 @@ namespace Laboratorio8_Ejercicio_18
                 txtResultado.AppendText(t + " ");
             }
             txtResultado.AppendText(Environment.NewLine);
-            txtResultado.AppendText("Las palabras ordenadas de menor a mayor por su longitud: " + Environment.NewLine);
+            txtResultado.AppendText("Las palabras ordenadas de mayor a menor por su longitud: " + Environment.NewLine);
             List<string> PalabraslogMenorMayor = PalabrasLongitudMenorMayor(listaPalAbras);
             foreach (string i in PalabraslogMenorMayor)
             {
