@@ -1,4 +1,4 @@
-namespace Laboratorio8_Ejercicio_10
+namespace Laboratorio8_Ejercicio_20
 {
     internal static class Program
     {
